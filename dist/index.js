@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const next_1 = __importDefault(require("next"));
 const express_1 = __importDefault(require("express"));
 const routes_1 = __importDefault(require("./routes"));
-const port = parseInt(process.env.PORT || '80', 433);
+const port = parseInt(process.env.PORT || '3000', 10);
 const dev = process.env.NODE_ENV !== 'production';
 const app = next_1.default({ dev: process.env.NODE_ENV !== 'production' });
 const handler = routes_1.default.getRequestHandler(app);
